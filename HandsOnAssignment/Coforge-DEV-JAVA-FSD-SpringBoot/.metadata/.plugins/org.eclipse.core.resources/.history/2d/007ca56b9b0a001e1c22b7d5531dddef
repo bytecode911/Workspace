@@ -1,0 +1,16 @@
+package com.mycompany;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.mycompany.service.SpeakerService;
+import com.mycompany.service.SpeakerServiceImpl;
+
+@Configuration
+public class AppConfig {
+	
+	
+	public SpeakerService getSpeakerService() {
+		return new SpeakerServiceImpl();
+	}
+
+}
